@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SkyNest Co-Living Spaces | Singapore</title>
+<meta name="description" content="SkyNest Co-Living Spaces offers flexible short-term and long-term co-living accommodation for young professionals, digital nomads, and international students in Singapore.">
+<meta name="theme-color" content="#124f4a">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<script>
+  /* Apply the saved or system theme before the page paints, so there is no light flash in dark mode. */
+  (function () {
+    var saved = null;
+    try { saved = localStorage.getItem('skynest-theme'); } catch (e) {}
+    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute('data-theme', saved || (prefersDark ? 'dark' : 'light'));
+  })();
+</script>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner wrapper">
+    <a href="#top" class="logo" aria-label="SkyNest Co-Living Spaces, back to top">
+      <svg class="logo-mark" viewBox="0 0 44 44" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#124f4a"/>
+            <stop offset="1" stop-color="#2c8a80"/>
+          </linearGradient>
+        </defs>
+        <rect width="44" height="44" rx="12" fill="url(#logoGrad)"/>
+        <path class="logo-arc" d="M9.5 17.5 Q22 6 34.5 17.5" fill="none" stroke="#f2994a" stroke-width="2.6" stroke-linecap="round"/>
+        <circle class="logo-star" cx="34.5" cy="10" r="1.8" fill="#ffd27a"/>
+        <path d="M13.5 35V21.8L22 16.4l8.5 5.4V35z" fill="#ffffff"/>
+        <rect x="16.8" y="23.2" width="3.2" height="3.2" rx="0.6" fill="#1f6f68"/>
+        <rect x="24" y="23.2" width="3.2" height="3.2" rx="0.6" fill="#1f6f68"/>
+        <rect x="16.8" y="28.4" width="3.2" height="3.2" rx="0.6" fill="#1f6f68"/>
+        <rect x="24" y="28.4" width="3.2" height="3.2" rx="0.6" fill="#f2994a"/>
+      </svg>
+      <span class="logo-text">
+        <span class="logo-name">Sky<span class="logo-accent">Nest</span></span>
+        <span class="logo-tag">Co-Living &middot; Singapore</span>
+      </span>
+    </a>
+
+    <div class="header-actions">
+      <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#facilities">Facilities</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#find-my-stay">Find My Stay</a></li>
+          <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4.2"/><g class="sun-rays"><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></g></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.5 14.6A8.6 8.6 0 0 1 9.4 3.5a8.6 8.6 0 1 0 11.1 11.1z"/></svg>
+      </button>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Open main menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main-content">
+
+  <section class="hero" id="top">
+    <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
+    <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
+    <div class="wrapper hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Co-Living in Singapore</p>
+        <h1>A home base for people building a life <span class="text-highlight">on the move.</span></h1>
+        <p class="hero-lead">SkyNest gives young professionals, digital nomads, and international students fully furnished rooms, flexible contracts, and a community that actually gets what it's like to relocate for work or study.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#find-my-stay">Find My Stay</a>
+          <a class="btn btn-secondary" href="#packages">View Packages</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><strong><span data-count="4">4</span></strong><span>Stay packages</span></div>
+          <div class="hero-stat"><strong><span data-count="24">24</span>/7</strong><span>Security &amp; access</span></div>
+          <div class="hero-stat"><strong>1&ndash;<span data-count="4">4</span>+</strong><span>Weeks to long-term</span></div>
+        </div>
+      </div>
+      <div class="hero-media">
+        <div class="hero-photo">
+          <img src="images/hero-building.jpg" alt="Modern apartment building with glass balconies, representing a SkyNest co-living property">
+        </div>
+        <div class="hero-badge hero-badge-top" aria-hidden="true">
+          <span class="badge-dot"></span> High-speed Wi-Fi in every room
+        </div>
+        <div class="hero-badge hero-badge-bottom" aria-hidden="true">
+          <strong>Move-in ready</strong><span>Fully furnished rooms</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="wrapper">
+      <p class="section-eyebrow">About SkyNest</p>
+      <h2 class="section-title">Built for people who relocate, not just visit</h2>
+      <p class="section-lead">Remote work and global study have changed how people need to live. SkyNest was designed around that shift: flexible stays, real community, and none of the friction of a traditional long-term lease.</p>
+
+      <div class="about-grid">
+        <div class="about-art" data-reveal="left">
+          <img src="images/room-premium.jpg" alt="Fully furnished private bedroom with bedside lamps and fresh linen">
+        </div>
+        <div class="about-card-list">
+          <article class="about-card" data-reveal="right">
+            <span class="about-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v9a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1v-9"/></svg></span>
+            <div>
+              <h3>Who SkyNest is for</h3>
+              <ul>
+                <li>Young professionals relocating for a new role or project</li>
+                <li>Digital nomads who need reliable Wi-Fi and a desk, not a hotel room</li>
+                <li>International students who want a safe, furnished space near campus</li>
+                <li>Corporate teams and clients needing custom or accessible accommodation</li>
+              </ul>
+            </div>
+          </article>
+          <article class="about-card" data-reveal="right">
+            <span class="about-icon about-icon-accent" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
+            <div>
+              <h3>What makes it different</h3>
+              <ul>
+                <li>Stays from one week to long-term, with no traditional lease commitment</li>
+                <li>Every room is fully furnished and move-in ready</li>
+                <li>Co-working space and high-speed Wi-Fi are built into the building, not an afterthought</li>
+                <li>A social calendar that makes it easy to meet people in a new city</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="facilities alt-bg" id="facilities">
+    <div class="wrapper">
+      <p class="section-eyebrow">Facilities</p>
+      <h2 class="section-title">Everything you need, under one roof</h2>
+      <p class="section-lead">Use the tabs below to explore what's included at every SkyNest property.</p>
+
+      <div class="facility-gallery">
+        <figure class="facility-photo" data-reveal="zoom"><img src="images/room-garden.jpg" alt="Furnished private bedroom with a wooden bed and garden view"><figcaption>Private rooms</figcaption></figure>
+        <figure class="facility-photo" data-reveal="zoom"><img src="images/coworking.jpg" alt="Shared co-working desks with monitors and desk lamps"><figcaption>Co-working</figcaption></figure>
+        <figure class="facility-photo" data-reveal="zoom"><img src="images/dining-meeting.jpg" alt="Shared dining and meeting space with a long table"><figcaption>Shared spaces</figcaption></figure>
+        <figure class="facility-photo" data-reveal="zoom"><img src="images/rooftop.jpg" alt="Rooftop lounge with sofas, plants and a city view"><figcaption>Rooftop garden</figcaption></figure>
+      </div>
+
+      <div class="tabs" role="tablist" aria-label="Facility categories">
+        <button class="tab-btn is-active" id="tab-core" role="tab" aria-selected="true" aria-controls="panel-core">Core Facilities</button>
+        <button class="tab-btn" id="tab-work" role="tab" aria-selected="false" aria-controls="panel-work" tabindex="-1">Work &amp; Wi-Fi</button>
+        <button class="tab-btn" id="tab-life" role="tab" aria-selected="false" aria-controls="panel-life" tabindex="-1">Lifestyle &amp; Community</button>
+        <span class="tab-indicator" id="tabIndicator" aria-hidden="true"></span>
+      </div>
+
+      <div class="tab-panel" id="panel-core" role="tabpanel" aria-labelledby="tab-core" tabindex="0">
+        <ul class="facility-list">
+          <li><strong>Fully furnished private rooms</strong> &mdash; move in with a suitcase, not a moving van.</li>
+          <li><strong>Communal kitchens and dining areas</strong> &mdash; cook your own meals or share one with the floor.</li>
+          <li><strong>Laundry rooms</strong> &mdash; on every residential floor, no coins required.</li>
+          <li><strong>24/7 security and key-card access</strong> &mdash; every entry point and lift is key-card controlled, staffed around the clock.</li>
+        </ul>
+      </div>
+
+      <div class="tab-panel" id="panel-work" role="tabpanel" aria-labelledby="tab-work" tabindex="0" hidden>
+        <ul class="facility-list">
+          <li><strong>Shared co-working spaces</strong> &mdash; quiet zones and collaborative tables on every floor.</li>
+          <li><strong>High-speed Wi-Fi throughout the building</strong> &mdash; including every bedroom, lounge, and rooftop space.</li>
+          <li><strong>Study pods</strong> &mdash; enclosed, bookable spaces for calls, exams, and deep-focus work.</li>
+        </ul>
+      </div>
+
+      <div class="tab-panel" id="panel-life" role="tabpanel" aria-labelledby="tab-life" tabindex="0" hidden>
+        <ul class="facility-list">
+          <li><strong>Rooftop garden</strong> &mdash; open-air space for residents to relax or host small gatherings.</li>
+          <li><strong>Gym and yoga studio</strong> &mdash; on-site, no separate membership needed.</li>
+          <li><strong>Social lounge</strong> &mdash; the main gathering space for residents between work and home.</li>
+          <li><strong>Weekly community events</strong> &mdash; from welcome dinners to skill-swap evenings.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="packages" id="packages">
+    <div class="wrapper">
+      <p class="section-eyebrow">Packages</p>
+      <h2 class="section-title">Choose how you want to stay</h2>
+      <p class="section-lead">Four ways to live at SkyNest, from a one-week stopover to a fully custom, long-term arrangement.</p>
+
+      <div class="package-grid">
+        <article class="package-card package-card-featured" data-reveal="up">
+          <span class="package-ribbon">Most complete</span>
+          <div class="package-media"><img src="images/room-premium.jpg" alt="Private studio bedroom, Premium Stay"></div>
+          <h3>Premium Stay</h3>
+          <p class="package-tag">Best for: comfort &amp; full access</p>
+          <ul>
+            <li>Private studio apartment</li>
+            <li>Weekly cleaning service</li>
+            <li>Utilities included</li>
+            <li>High-speed internet included</li>
+            <li>Access to all facilities</li>
+            <li>Monthly community events pass</li>
+          </ul>
+        </article>
+
+        <article class="package-card" data-reveal="up">
+          <div class="package-media"><img src="images/room-standard.jpg" alt="Bedroom in a shared apartment, Standard Stay"></div>
+          <h3>Standard Stay</h3>
+          <p class="package-tag">Best for: value &amp; community</p>
+          <ul>
+            <li>Private bedroom in a shared apartment</li>
+            <li>Fortnightly cleaning</li>
+            <li>Utilities included</li>
+            <li>Access to co-working space</li>
+            <li>Shared kitchen and lounge</li>
+          </ul>
+        </article>
+
+        <article class="package-card" data-reveal="up">
+          <div class="package-media"><img src="images/room-shortterm.jpg" alt="Furnished room for short stays"></div>
+          <h3>Short-Term Stay</h3>
+          <p class="package-tag">Best for: 1&ndash;4 week visits</p>
+          <ul>
+            <li>Flexible booking, 1 to 4 weeks</li>
+            <li>Furnished room</li>
+            <li>Utilities included</li>
+            <li>Limited access to shared facilities</li>
+          </ul>
+        </article>
+
+        <article class="package-card package-card-custom" data-reveal="up">
+          <div class="package-media"><img src="images/dining-meeting.jpg" alt="Meeting space suited to corporate bookings"></div>
+          <h3>Custom Packages</h3>
+          <p class="package-tag">Best for: corporate &amp; accessibility needs</p>
+          <ul>
+            <li>Available for corporate bookings and long-term stays</li>
+            <li>Built around residents with accessibility needs</li>
+            <li>Arranged directly with the SkyNest team</li>
+          </ul>
+          <a class="btn btn-secondary btn-block" href="#contact">Discuss a custom package</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="advisor" id="find-my-stay">
+    <div class="wrapper advisor-inner">
+      <div class="advisor-intro">
+        <p class="section-eyebrow">Find My Stay</p>
+        <h2 class="section-title">Not sure which stay fits you?</h2>
+        <p class="section-lead">Answer two quick questions and we'll point you to the right package.</p>
+      </div>
+
+      <div class="advisor-panel" data-reveal="up">
+        <form class="advisor-form" id="advisorForm" novalidate>
+          <fieldset>
+            <legend>How long do you need to stay?</legend>
+            <label class="radio-option"><input type="radio" name="length" value="short" required><span>A few weeks or less</span></label>
+            <label class="radio-option"><input type="radio" name="length" value="long"><span>A few months or more</span></label>
+          </fieldset>
+
+          <fieldset>
+            <legend>What matters most to you?</legend>
+            <label class="radio-option"><input type="radio" name="priority" value="budget" required><span>Keeping costs low and sharing space</span></label>
+            <label class="radio-option"><input type="radio" name="priority" value="privacy"><span>Privacy and full facility access</span></label>
+            <label class="radio-option"><input type="radio" name="priority" value="custom"><span>Corporate booking or accessibility needs</span></label>
+          </fieldset>
+
+          <button type="submit" class="btn btn-primary">Show my recommendation</button>
+        </form>
+
+        <div id="advisorResult" class="advisor-result" role="status" aria-live="polite" hidden></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrapper contact-grid">
+      <div class="contact-intro" data-reveal="left">
+        <p class="section-eyebrow">Contact</p>
+        <h2>Ask us anything</h2>
+        <p>Whether you need general information, help choosing a package, a custom corporate arrangement, or want to discuss accessibility requirements, our team will get back to you within one business day.</p>
+        <ul class="contact-details">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span><strong>Address:</strong> SkyNest Co-Living, 128 Robinson Road, Singapore</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span><strong>Email:</strong> hello@skynest-example.sg</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span><strong>Phone:</strong> +65 6123 4567</span></li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate data-reveal="right">
+        <div class="form-row">
+          <label for="fullName">Full name</label>
+          <input type="text" id="fullName" name="fullName" autocomplete="name" required aria-describedby="fullNameError">
+          <p class="field-error" id="fullNameError" role="alert" hidden>Please enter your full name.</p>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="emailError">
+          <p class="field-error" id="emailError" role="alert" hidden>Please enter a valid email address.</p>
+        </div>
+
+        <div class="form-row">
+          <label for="enquiryType">Enquiry type</label>
+          <select id="enquiryType" name="enquiryType" required aria-describedby="enquiryTypeError">
+            <option value="">Please select&hellip;</option>
+            <option value="general">General Enquiry</option>
+            <option value="package">Package Advice</option>
+            <option value="custom">Custom Package</option>
+            <option value="accessibility">Accessibility Needs</option>
+          </select>
+          <p class="field-error" id="enquiryTypeError" role="alert" hidden>Please select an enquiry type.</p>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required aria-describedby="messageError"></textarea>
+          <p class="field-error" id="messageError" role="alert" hidden>Please enter a message (at least 10 characters).</p>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Send enquiry</button>
+
+        <p class="form-success" id="formSuccess" role="status" aria-live="polite" hidden>Thank you &mdash; your enquiry has been received. A member of the SkyNest team will reply within one business day.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrapper footer-inner">
+    <p>&copy; 2026 SkyNest Co-Living Spaces, Singapore. All rights reserved.</p>
+    <p class="credits">Photography: Unsplash (Unsplash License). Fonts: Poppins and Inter (SIL Open Font License).</p>
+  </div>
+</footer>
+
+<a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>
