@@ -141,6 +141,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
       error.hidden = true;
       pkg.removeAttribute('aria-invalid');
+      if (pkg.value === 'help') { window.location.href = 'packages.html#find-my-stay'; return; }
       var url = 'packages.html?package=' + encodeURIComponent(pkg.value);
       if (date.value) { url += '&date=' + encodeURIComponent(date.value); }
       window.location.href = url + '#' + pkg.value;
